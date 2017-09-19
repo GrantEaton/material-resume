@@ -1,0 +1,284 @@
+$card-title-spacing: 16px;
+$card-vertical-padding: 12px;
+
+.card-layout {
+  width: auto;
+  height: auto;
+  min-height: auto;
+
+  margin-bottom: $card-spacing;
+
+  @media print {
+    box-shadow: none !important;
+  }
+
+  &__title {
+    padding: 3/4*$card-spacing $card-spacing;
+    i {
+      font-size: 1.25em;
+
+      margin-right: $card-title-spacing;
+    }
+
+    p {
+      @extend .header-text;
+
+      font-weight: 100;
+      line-height: 18px;
+
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &__supporting-text {
+    width: 100%;
+    padding: 0;
+
+    > * {
+      padding: $card-vertical-padding $card-spacing;
+    }
+  }
+}
+
+.card-detail-layout, .evidence-detail-layout {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+  .title, .subtitle, .content {
+    & * {
+      display: inline;
+    }
+  }
+
+  .title *, .subtitle * {
+    @extend .body-text;
+  }
+
+  .title * {
+    img.logo{
+      float: right;
+      width: 40px;
+      height: auto;
+      border-radius: 3px;
+      display: block;
+    }
+    font-weight: normal !important;
+  }
+
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.card-detail-layout {
+  .content {
+    padding-left: $card-spacing;
+
+    * {
+      @extend .small-text;
+    }
+  }
+
+  p.courses {
+    @extend .mdl-color-text-accent--fg, .body-text;
+
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.evidence-detail-layout {
+  padding: ($card-vertical-padding / 2) $card-spacing;
+
+  &:first-child {
+    padding-top: $card-vertical-padding;
+  }
+
+  &:last-child {
+    padding-bottom: $card-vertical-padding;
+  }
+
+  .subtitle {
+    @extend .smaller-text;
+    
+    padding-left: $card-spacing;
+  }
+}
+
+.objective-card-layout {
+  .card-layout__supporting-text {
+    width: 100%;
+
+    padding-left: $card-spacing * 2 + 24px;
+    padding-right: $card-spacing * 2 + 24px;
+
+    box-sizing: border-box;
+
+    position: relative;
+  }
+
+  p {
+    @extend .body-text;
+
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  i {
+    position: absolute;
+    display: inline-block;
+
+    padding: $card-vertical-padding $card-spacing $card-vertical-padding 0;
+  }
+
+  i.left {
+    top: 0;
+    left: 0;
+
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+
+  i.right {
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.exp-columns {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+
+  .exp-column {
+    flex: 1 1 auto;
+    box-sizing: border-box;
+
+    &:first-child {
+      width: 60%;
+    }
+
+    &:last-child {
+      width: 40%;
+    }
+
+    p {
+      @extend .body-text, .mdl-color-text-accent--fg;
+
+      text-align: center;
+      font-weight: normal !important;
+
+      margin: 0;
+
+      &:after {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 90%;
+        margin: 8px 5%;
+        background: unquote('rgba(#{$color-primary-dark}, 1)');
+      }
+    }
+
+    ul.mdl-list {
+      padding: 0;
+      margin: 0;
+
+      li.mdl-list__item {
+        @extend .small-text;
+
+        color: rgba(0, 0, 0, 0.54);
+
+        min-height: auto;
+
+        padding: 0 0 0 $card-spacing;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.card-columns {
+  width: 100%;
+
+  display: flex;
+  box-sizing: border-box;
+
+  .card-column {
+    flex: 1 1 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    p {
+      @extend .body-text, .mdl-color-text-accent--fg;
+      width: 100%;
+
+      text-align: center;
+      font-weight: normal !important;
+
+      margin: 0;
+
+      align-self: center;
+
+      &::after {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 90%;
+        margin: 8px 5%;
+        background: unquote('rgba(#{$color-primary-dark}, 1)');
+      }
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+
+      li {
+        @extend .smaller-text;
+
+        display: block;
+
+        margin-bottom: $card-spacing / 4;
+      }
+    }
+
+    &.languages {
+      width: 47%;
+
+      > ul {
+        padding: 0 $card-spacing / 2;
+
+        display: flex;
+        justify-content: space-around;
+
+        > ul {
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+
+    &.frameworks {
+      width: 28%;
+
+      ul {
+        text-align: center;
+      }
+    }
+
+    &.databases {
+      width: 25%;
+
+      ul {
+        text-align: center;
+      }
+    }
+  }
+}

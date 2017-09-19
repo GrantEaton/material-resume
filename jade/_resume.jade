@@ -1,0 +1,32 @@
+include _header
+include _card
+
+mixin resume(type, name, headshotImg, phone, email, github, twitter, linkedin, cssFile)
+  doctype html
+  html
+    head
+      title #{type} Resume - Grant Eaton
+      meta(name='viewport', content="width=device-width, initial-scale=1.0")
+      link(rel="stylesheet", href="#{cssFile}")
+      link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext", type="text/css")
+      link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons", type="text/css")
+      script(defer, src='../node_modules/material-design-lite/material.min.js')
+    body
+      .mdl-layout.mdl-js-layout.mdl-layout--fixed-header.mdl-layout--no-drawer-button
+        header.mdl-layout__header.mdl-layout__header--scroll
+          .mdl-layout__header-row
+            .header-wrapper
+              .headshot
+                img.circle(src="#{headshotImg}")
+              .name-email
+                span.mdl-layout__title Grant Eaton
+            div.contacts-wrapper
+              +contactItem('email', email)
+              +contactItem('phone_iphone', phone)
+              if github !== ''
+                +contactItem('github', github)
+              if twitter !== ''
+                +contactItem('twitter', twitter)
+              +contactItem('linkedin', linkedin)   
+        main.content-layout.mdl-layout__content
+          block

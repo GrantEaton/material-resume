@@ -1,0 +1,47 @@
+// Regular
+@font-face {
+  font-family: 'Aleo';
+  src: url('../fonts/aleo_regular_macroman/Aleo-Regular-webfont.eot');
+  src: url('../fonts/aleo_regular_macroman/Aleo-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/aleo_regular_macroman/Aleo-Regular-webfont.woff') format('woff'),
+       url('../fonts/aleo_regular_macroman/Aleo-Regular-webfont.ttf') format('truetype'),
+       url('../fonts/aleo_regular_macroman/Aleo-Regular-webfont.svg#aleoregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Regular, Italic
+@font-face {
+  font-family: 'Aleo';
+  src: url('../fonts/aleo_regularitalic_macroman/Aleo-Italic-webfont.eot');
+  src: url('../fonts/aleo_regularitalic_macroman/Aleo-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/aleo_regularitalic_macroman/Aleo-Italic-webfont.woff') format('woff'),
+       url('../fonts/aleo_regularitalic_macroman/Aleo-Italic-webfont.ttf') format('truetype'),
+       url('../fonts/aleo_regularitalic_macroman/Aleo-Italic-webfont.svg#aleoitalic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+// Light
+@font-face {
+  font-family: 'Aleo';
+  src: url('../fonts/aleo_light_macroman/Aleo-Light-webfont.eot');
+  src: url('../fonts/aleo_light_macroman/Aleo-Light-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/aleo_light_macroman/Aleo-Light-webfont.woff') format('woff'),
+       url('../fonts/aleo_light_macroman/Aleo-Light-webfont.ttf') format('truetype'),
+       url('../fonts/aleo_light_macroman/Aleo-Light-webfont.svg#aleolight') format('svg');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+// Light, Italic
+@font-face {
+  font-family: 'Aleo';
+  src: url('../fonts/aleo_lightitalic_macroman/Aleo-Lightitalic-webfont.eot');
+  src: url('../fonts/aleo_lightitalic_macroman/Aleo-Lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/aleo_lightitalic_macroman/Aleo-Lightitalic-webfont.woff') format('woff'),
+       url('../fonts/aleo_lightitalic_macroman/Aleo-Lightitalic-webfont.ttf') format('truetype'),
+       url('../fonts/aleo_lightitalic_macroman/Aleo-Lightitalic-webfont.svg#aleoitalic') format('svg');
+  font-weight: lighter;
+  font-style: italic;
+}

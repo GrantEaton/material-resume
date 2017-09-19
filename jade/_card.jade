@@ -1,0 +1,45 @@
+mixin card(title, icon)
+  .card-layout.mdl-card.mdl-shadow--4dp
+    .card-layout__title.mdl-card__title.mdl-color-primary--bg
+      i.material-icons= icon
+      p= title
+    .card-layout__supporting-text.mdl-card__supporting-text
+      block
+      
+mixin cardDetail(title, titleExtra, subtitle, subtitleExtra, companyImage)
+  .card-detail-layout
+    .title
+      p.mdl-color-text-accent--fg= title
+      if titleExtra !== ''
+        p.mdl-color-primary-dark--fg |
+        p= titleExtra      
+      .logo
+        if companyImage !== ''
+          img.logo(src="#{companyImage}")  
+    .subtitle
+      p= subtitle
+      if subtitleExtra !== ''
+        p.mdl-color-primary-dark--fg |
+        p= subtitleExtra
+    .content
+      block
+      
+mixin evidenceDetail(title, titleExtra, subtitle, subtitleExtra)
+  .evidence-detail-layout
+    .title
+      p.mdl-color-text-accent--fg= title
+      if titleExtra !== ''
+        p.mdl-color-primary-dark--fg |
+        p= titleExtra
+    .subtitle
+      p= subtitle
+      if subtitleExtra !== ''
+        span ,
+        p= subtitleExtra
+          
+mixin objectiveCard(title)
+  .objective-card-layout.card-layout.mdl-card.mdl-shadow--4dp
+    .card-layout__supporting-text.mdl-card__supporting-text
+      i.material-icons.left format_quote
+      block
+      i.material-icons.right format_quote  

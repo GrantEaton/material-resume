@@ -1,0 +1,113 @@
+// IMport color definitions to use in theme
+@import '../node_modules/material-design-lite/src/_color-definitions.scss';
+
+// Import a theme of choice
+@import '_aleo_font.scss';
+@import '_pataky-theme.scss';
+
+// Import MDL Styles
+@import '../node_modules/material-design-lite/src/material-design-lite.scss';
+
+// Import custom styles
+$smaller-text-size: 0.90em;
+$small-text-size: 0.95em;
+$body-text-size: 1em;
+$header-text-size: 1.05em;
+$line-height-multiplier: 1.5;
+
+$card-spacing: 16px;
+
+@import '_header.scss';
+@import '_content.scss';
+@import '_card.scss';
+
+.mdl-color-primary {
+  &--fg {
+    color: unquote('rgba(#{$color-primary}, 1)');
+  }
+
+  &--bg {
+    background-color: unquote('rgba(#{$color-primary}, 1)');
+    color: unquote('rgba(#{$color-primary-contrast}, 1)');
+
+    p {
+      opacity: 0.87;
+    }
+  }
+}
+
+.mdl-color-accent {
+  &--fg {
+    color: unquote('rgba(#{$color-accent}, 1)');
+  }
+
+  &--bg {
+    background-color: unquote('rgba(#{$color-accent}, 1)');
+    color: unquote('rgba(#{$color-accent-contrast}, 1)');
+
+    p {
+      opacity: 0.87;
+    }
+  }
+}
+
+.mdl-color-primary-dark {
+  &--fg {
+    color: unquote('rgba(#{$color-primary-dark}, 1)');
+  }
+
+  &--bg {
+    background-color: unquote('rgba(#{$color-primary-dark}, 1)');
+    color: unquote('rgba(#{$color-primary-dark}, 1)');
+
+    p {
+      opacity: 0.87;
+    }
+  }
+}
+
+.mdl-color-text-accent {
+  &--fg {
+    color: unquote('rgba(#{$color-text-accent}, 1)');
+  }
+
+  &--bg {
+    background-color: unquote('rgba(#{$color-text-accent}, 1)');
+    color: unquote('rgba(#{$color-text-accent-contrast}, 1)');
+
+    p {
+      opacity: 0.87;
+    }
+  }
+}
+
+.body-text {
+  font-family: Aleo, Helvetica, Arial, serif;
+  font-size: $body-text-size !important;
+  line-height: $body-text-size * $line-height-multiplier !important;
+  font-weight: lighter;
+}
+
+.header-text {
+  font-family: Lato, Roboto, Arial, serif;
+  font-size: $header-text-size !important;
+  font-weight: normal;
+}
+
+.small-text {
+  font-family: Aleo, Helvetica, Arial, serif;
+  font-size: $small-text-size !important;
+  line-height: $small-text-size * ($line-height-multiplier + 0.1) !important;
+  font-weight: lighter;
+}
+
+.smaller-text {
+  font-family: Aleo, Helvetica, Arial, serif;
+  font-size: $smaller-text-size !important;
+  line-height: $smaller-text-size * ($line-height-multiplier + 0.1) !important;
+  font-weight: lighter;
+}
+
+.footer{
+  color: #a1a4a8;
+}

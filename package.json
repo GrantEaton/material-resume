@@ -1,0 +1,22 @@
+{
+  "name": "material-resume",
+  "version": "1.0.0",
+  "description": "A template for creating resumes websites that can be easily saved to PDF through a browser. Uses Google's Material Design through the MDL (Material Design Lite) library.",
+  "main": "js/index.js",
+  "dependencies": {
+    "material-design-lite": "^1.1.3"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-jade": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^1.2.0",
+    "jade": "^1.11.0",
+    "node-sass": "^3.8.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zjijz",
+  "license": "ISC"
+}

@@ -1,0 +1,115 @@
+$header-extended-height: 112px;
+$header-title-line-height: 84px;
+
+$header-span-font-size: 2.3em;
+$header-image-height: 73px;
+
+header.mdl-layout__header {
+  div.mdl-layout__header-row {
+    height: $header-extended-height;
+    justify-content: left;
+  }
+
+  .header-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  div.contacts-wrapper {
+    width: 290px;
+    margin-left: auto;
+    padding-left: 2 * $card-spacing;
+    box-sizing: border-box;
+  }
+
+   span.mdl-layout__title {
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative;
+    top: -2px;
+
+    width: 230px;
+
+    font-size: $header-span-font-size;
+    font-weight: lighter;
+    //line-height: $header-span-font-size * $line-height-multiplier;
+    text-align: right;
+
+    padding-right: 2 * $card-spacing;
+  }
+  span.mdl-layout__email {
+    top: -2px;
+
+    //line-height: $header-span-font-size * $line-height-multiplier;
+    text-align: center;
+    padding-right: 2 * $card-spacing;   
+  }
+
+  .headshot, .headshot:before {
+    width: $header-image-height + 6px;
+    height: $header-image-height + 6px;
+  }
+
+  .headshot {
+    position: relative;
+    display: inline-block;
+    //for shadow
+    //box-shadow: 0px 5px 5px rgba(0,0,0,0.6); 
+    //-moz-box-shadow: 0px 5px 5px rgba(0,0,0,0.6);
+    //-webkit-box-shadow: 0px 5px 5px rgba(0,0,0,0.6);
+    //-o-box-shadow: 0px 5px 5px rgba(0,0,0,0.6);
+    //border-radius:100px;
+
+    img.circle {
+      position: absolute;
+      top: 3px;
+      left: 3px;
+
+      border-radius: 50%;
+      width: $header-image-height;
+      height: auto;
+    }
+
+    &:before {
+      //@extend .mdl-color-accent--bg;
+
+      content: '';
+
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      //background-color: red;
+      border-radius: 50%;
+    }
+  }
+
+  .contact-wrapper {
+    opacity: 0.87;
+
+    * {
+      vertical-align: text-bottom;
+      margin-right: 8px;
+    }
+
+    i, img {
+      font-size: $smaller-text-size !important;
+      line-height: $smaller-text-size * ($line-height-multiplier + 0.1) !important;
+      font-weight: lighter;
+    }
+
+    svg {
+      vertical-align: text-top;
+      opacity: 0.87;
+
+      width: 13px;
+      height: 13px;
+    }
+
+    span {
+      @extend .smaller-text;
+      font-family: Lato, Roboto, Arial, serif !important;
+    }
+  }
+}

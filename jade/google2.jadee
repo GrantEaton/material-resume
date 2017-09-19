@@ -1,0 +1,126 @@
+include _header
+include _card
+include _resume
++resume('Core', 'Grant Eaton', '../img/GEHex.png', '513-374-7848', 
+        'eatongl@miamioh.edu', 'www.github.com/granteaton', '', 
+		'www.linkedin.com/in/grant-eaton', '../css/main.css')
+  .columns
+    .column
+	  +card('Experience', 'code')
+        +cardDetail('IBM', 'Software Developer Intern', 'NYC, NY', 'June ~ Present', '')
+		  p Developing with a Watson Cognitive team using 
+            |  #[span.mdl-color-primary-dark--fg  Nodejs], 
+			|  #[span.mdl-color-primary-dark--fg Angularjs], 
+            |  #[span.mdl-color-primary-dark--fg Express],
+            |  #[span.mdl-color-primary-dark--fg IBM&#39;s Watson APIs] and 
+			|  #[span.mdl-color-primary-dark--fg Bluemix] to create internal web tools to simplify the use of Watson services for other IBM employees. Designed and built a solution aimed to save
+            |  #[span.mdl-color-primary-dark--fg $120,000] annually for the Cognitive Academy team.
+        +cardDetail('Oxford Sceen Repair', 'Owner', 'Oxford, OH', 'Aug 2015 ~ Present', '')
+		  p  Created an iPhone repair service, profitting 
+            #[span.mdl-color-primary-dark--fg $10,000] annually, developed software to track sales and profits, along with a website,   
+            |  #[span.mdl-color-primary-dark--fg OxfordScreenRepair.com].  
+		+cardDetail('Lampros Labs', 'Web & Application Consultant', 
+                    'Cincinnati, OH', 'June ~ Aug 2016', '')
+          p Designed, developed, and deployed an image storage solution with 
+            |  #[span.mdl-color-primary-dark--fg AWS&#39;s IOS SDK], using 
+            |  #[span.mdl-color-primary-dark--fg s3 Buckets] for Neep, a social networking iPhone application. Created a UI in
+			|  #[span.mdl-color-primary-dark--fg Swift & Objective-C] to customize and share images with other Neep users.
+      +card('Education', 'school')
+        .card-detail-layout
+          .title
+            p.mdl-color-text-accent--fg Miami University
+		  .subtitle
+            p Oxford, OH
+              | #[span.mdl-color-primary-dark--fg  |] 
+              | Aug 2015 ~ May 2019 (Expected)
+          .content
+			p Cumulative GPA, #[span.mdl-color-primary-dark--fg 3.57]
+            br
+            p Bachelor of Science, 
+              | #[span.mdl-color-primary-dark--fg Computer Science]
+            br
+			p Co-major of Arts, 
+              | #[span.mdl-color-primary-dark--fg Interactive Media Studies]
+            br
+          p(style="margin-top:2px;").courses Courses
+            .card-columns(style="margin-top:2px;")
+			  .card-column
+                ul
+                  li Object-Oriented Programming
+                  li Data Structures
+                  li Computer Architecture
+				  li Networking & Data Comm.
+                  li Database Systems
+              .card-column 
+                ul
+                  li Intro to AI
+				  li Comparative Prog. Languages
+                  li Intro to Mobile App Dev
+                  li Web Interaction Programming
+                  li Operating Systems
+          p(style="margin-top:2px;").courses Graduate Courses
+			.card-columns(style="margin-top:2px;")        
+              .card-column 
+                ul
+                  li Machine Learning
+                  li Algorithms
+				  li High Performace Computing
+    .column
+      +card('Personal Projects', 'assignment_turned_in')
+        +cardDetail("Miami Scheduler", 'December 2016 ~ Present', 'MiamiScheduler.com', '', '')
+          p A webapp used by over
+			|  #[span.mdl-color-primary-dark--fg 1/4 the student body] at Miami University, developed with two teammates in 
+            |  #[span.mdl-color-primary-dark--fg Golang],
+            |  #[span.mdl-color-primary-dark--fg Vue], and
+            |  #[span.mdl-color-primary-dark--fg PostgreSQL] which was made to expedite the course scheduling process at Miami University.
+            |  Miami Scheduler is unaffiliated with Miami University.
+		+cardDetail("IOS App Hacking/Securing Tutorial", 'June 2013', 'Github.com/GrantEaton/ios-app-hacking', '','')
+          p A tutorial on 
+            |  #[span.mdl-color-primary-dark--fg iPhone application hacking]  for a popular forum, gaining
+            |  #[span.mdl-color-primary-dark--fg 13,000 downloads] and an
+            |  #[span.mdl-color-primary-dark--fg award] for Most Useful Contribution.
+	 //-+cardDetail("Hackathons", 'Feb 2015, Mar 2016', '', '', '')
+          p Attended two Hackathons,
+            |  #[span.mdl-color-primary-dark--fg RevolutionUC] in Cincinnati and
+            |  #[span.mdl-color-primary-dark--fg Miami University&#39;s] first Hackathon in Oxford. 
+        +cardDetail("Watson Conversation SlackBot", 'May 2017', 'Github.com/GrantEaton/Watson-Slackbot', '', '')
+		  p A 
+            |  #[span.mdl-color-primary-dark--fg Node.js] script to create a
+            |  #[span.mdl-color-primary-dark--fg Slackbot], using
+            |  #[span.mdl-color-primary-dark--fg IBM&#39;s Watson Conversation API] and 
+            |  #[span.mdl-color-primary-dark--fg Botkit].
+	  +card('Technical Skills', 'star')
+		.card-columns
+		  .card-column.languages(style="width:37.5%")
+			p Proficient 
+			ul
+			  ul 
+				li Java
+			p Experienced
+			ul
+			  ul 
+				li JavaScript
+				li Prolog
+			  ul
+				li CSS / SASS
+                li HTML / Jade
+          .card-column.databases(style="width:24%")
+            p Technologies
+            ul
+              li SQL Databases
+              li Node.js
+              li Git
+              li AWS / Bluemix
+              li Gulp
+              li Travis
+
+      +card('Organizations', 'people')
+        +cardDetail('Association for Computing Machinery', 'Aug 2015 ~ Present', 
+                    'Student Member', '', '')
+        +cardDetail('Mobile Application Development Club', '2016 ~ Present', 'Student Memeber', 
+                    '', '')
+        +cardDetail('Miami University Rock Climbing Club', 'Aug 2015 ~ Present', 'Trip Planner/ Member', 
+                    '', '')
+          p Coordinating multiple 12-person climbing trips to the West Coast
+  .footer
+    p Developed with Material Design Lite, Scss and Jade.
