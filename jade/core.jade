@@ -2,7 +2,7 @@ include _header
 include _card
 include _resume
 +resume('Core', 'Grant Eaton', '../img/GEHex.png', '513-374-7848', 
-        'eatongl@miamioh.edu', 'www.github.com/granteaton', '', 
+        'grantiseaton@gmail.com', 'www.github.com/granteaton', '', 
         'www.linkedin.com/in/grant-eaton', '../css/main.css')
   .objective-wrapper
     //+objectiveCard("Nice to meet you, I'm Grant")
@@ -12,66 +12,61 @@ include _resume
   .columns
     .column
       +card('Experience', 'code')
-        +cardDetail('IBM', 'Software Developer Intern', 'NYC, NY', 
-                    'June ~ Present', '')
+        +cardDetail('Labelbox', 'Software Engineer', 
+                      '1 yr, Nov 2020 - Present', 'San Francisco, CA', '')
+          p  Building full-stack machine learning Diagnostics tools from scratch in
+            |  #[span.mdl-color-primary-dark--fg  Typescript],
+            |  #[span.mdl-color-primary-dark--fg  React] and
+            |  #[span.mdl-color-primary-dark--fg  Python].
+            |  Learn more about my product here:
+            |  #[span.mdl-color-primary-dark--fg  labelbox.com/product/model-diagnostics].
+            |  Led a quarter-long project of 4 engineers to build a
+            |  #[span.mdl-color-primary-dark--fg  RabbitMQ] and
+            |  #[span.mdl-color-primary-dark--fg  Celery] based data-pipeline to allow users to upload bulk data to our tools.
+            |  Helped launch Labelbox's first 
+            |  #[span.mdl-color-primary-dark--fg  component library] with
+            |  #[span.mdl-color-primary-dark--fg  storybook] integration.
+            |  Led multiple front-end projects which require creating technical designs,
+            |  helping other engineers, conversing with PMs & designers
+            |  in order to expand our platform and help users gain detailed insights about their model's performance. 
+        +cardDetail('Cruise Automation', 'Software Engineer', 
+                      '2 years, 2019-2020', 'San Francisco, CA', '')
+          p  Building web-based tools for rideshare fleets of
+            |  #[span.mdl-color-primary-dark--fg  self driving cars].
+            |  Developing 
+            |  #[span.mdl-color-primary-dark--fg  Cartographer],
+            |   a web tool to create and maintain semantic maps of an urban environment through mapping real world features, such as lanes,
+            |   boundaries and traffic controls. Used rapid iteration on a team of contributors that grew from 4 to 25 within a couple months.
+            |   Built with
+            |  #[span.mdl-color-primary-dark--fg  Typescript],
+            |  #[span.mdl-color-primary-dark--fg  React/ Redux],
+            |  #[span.mdl-color-primary-dark--fg  NodeJS],
+            |  #[span.mdl-color-primary-dark--fg  Express],
+            |  #[span.mdl-color-primary-dark--fg  Mapbox],
+            |  #[span.mdl-color-primary-dark--fg  Kubernetes and Docker].
+            |  Helped launch a patented map versioning system which allowed the merging of multiple map updates to avoid conflicts.
+        +cardDetail('Cruise Automation', 'Software Engineer Intern', 
+                      '3 mo, 2018', 'San Francisco, CA', '')
+          p Developing on the Mapping team, working in 
+            |  #[span.mdl-color-primary-dark--fg  React + Javascript] and
+            |  #[span.mdl-color-primary-dark--fg  Go], on a 3D web application for map deployment of rideshare fleets for self driving cars.
+        +cardDetail('IBM', 'Software Developer Intern', 
+                      '3 mo, 2017', 'NYC, NY', '')
           p Developing with a Watson Cognitive team using 
-            |  #[span.mdl-color-primary-dark--fg  Nodejs], 
-            |  #[span.mdl-color-primary-dark--fg Angularjs], 
+            |  #[span.mdl-color-primary-dark--fg  Nodejs],
+            |  #[span.mdl-color-primary-dark--fg Angularjs],
             |  #[span.mdl-color-primary-dark--fg Express],
-            |  #[span.mdl-color-primary-dark--fg IBM&#39;s Watson APIs] and 
+            |  #[span.mdl-color-primary-dark--fg IBM&#39;s Watson APIs] and
             |  #[span.mdl-color-primary-dark--fg Bluemix] to create internal web tools to simplify the use of Watson services for other IBM employees. Designed and built a solution aimed to save
             |  #[span.mdl-color-primary-dark--fg $120,000] annually for the Cognitive Academy team.
-        +cardDetail('Oxford Sceen Repair', 'Owner', 'Oxford, OH', 
-                    'Aug 2015 ~ Present', '')
+        +cardDetail('Oxford Sceen Repair', 'Owner', 
+                      '4 yr, 2015 - 2019', 'Oxford, OH', '')
           p  Created an iPhone repair service, profitting 
-            #[span.mdl-color-primary-dark--fg $10,000] annually, developed software to track sales and profits, along with a website,   
+            |  #[span.mdl-color-primary-dark--fg $10,000] annually, developed software to track sales and profits, along with a website,   
             |  #[span.mdl-color-primary-dark--fg OxfordScreenRepair.com].  
         +cardDetail('Lampros Labs', 'Web & Application Consultant', 
-                    'Cincinnati, OH', 'June ~ Aug 2016', '')
-          p Designed, developed, and deployed an image storage solution with 
-            |  #[span.mdl-color-primary-dark--fg AWS&#39;s IOS SDK], using 
-            |  #[span.mdl-color-primary-dark--fg s3 Buckets] for Neep, a social networking iPhone application. Created a UI in
-            |  #[span.mdl-color-primary-dark--fg Swift & Objective-C] to customize and share images with other Neep users.
-      +card('Education', 'school')
-        .card-detail-layout
-          .title
-            p.mdl-color-text-accent--fg Miami University
-          .subtitle
-            p Oxford, OH
-              | #[span.mdl-color-primary-dark--fg  |] 
-              | Aug 2015 ~ May 2019 (Expected)
-          .content
-            p Cumulative GPA, #[span.mdl-color-primary-dark--fg 3.57]
-            br
-            p Bachelor of Science, 
-              | #[span.mdl-color-primary-dark--fg Computer Science]
-            br
-            p Co-major of Arts, 
-              | #[span.mdl-color-primary-dark--fg Interactive Media Studies]
-            br
-          p(style="margin-top:2px;").courses Courses
-            .card-columns(style="margin-top:2px;")
-              .card-column
-                ul
-                  li Object-Oriented Programming
-                  li Data Structures
-                  li Computer Architecture
-                  li Networking & Data Comm.
-                  li Database Systems
-              .card-column 
-                ul
-                  li Intro to AI
-                  li Comparative Prog. Languages
-                  li Intro to Mobile App Dev
-                  li Web Interaction Programming
-                  li Operating Systems
-          p(style="margin-top:2px;").courses Graduate Courses
-            .card-columns(style="margin-top:2px;")        
-              .card-column 
-                ul
-                  li Machine Learning
-                  li Algorithms
-                  li High Performace Computing
+                    '2 mo, 2017', 'Cincinnati, OH', '')
+          p Developed IOS and web applications for various clients.
     .column
       +card('Personal Projects', 'assignment_turned_in')
         +cardDetail("Miami Scheduler", 'December 2016 ~ Present', 'MiamiScheduler.com', '', '')
@@ -96,52 +91,66 @@ include _resume
             |  #[span.mdl-color-primary-dark--fg Slackbot], using
             |  #[span.mdl-color-primary-dark--fg IBM&#39;s Watson Conversation API] and 
             |  #[span.mdl-color-primary-dark--fg Botkit].
+      +card('Education', 'school')
+        .card-detail-layout
+          .title
+            p.mdl-color-text-accent--fg Miami University
+          .subtitle
+            p Oxford, OH
+              | #[span.mdl-color-primary-dark--fg  |] 
+              | Aug 2015 ~ May 2019 (Expected)
+          .content
+            p Cumulative GPA, #[span.mdl-color-primary-dark--fg 3.57]
+            br
+            p Bachelor of Science, 
+              | #[span.mdl-color-primary-dark--fg Computer Science]
+            br
+            p Co-major of Arts, 
+              | #[span.mdl-color-primary-dark--fg Interactive Media Studies]
+            br
+          p(style="margin-top:4px;").courses Graduate Courses
+            .card-columns(style="margin-top:2px;")        
+              .card-column 
+                ul
+                  li Machine Learning
+                  li Algorithms
+                  li High Performace Computing
       +card('Technical Skills', 'star')
         .card-columns
           .card-column.languages(style="width:37.5%")
             p Proficient 
             ul
               ul 
-                li Java
+                li Typescript
             p Experienced
             ul
               ul 
-                li JavaScript
-                li Go
-                li CSS / SASS
-                li HTML / Jade
-                li Prolog
+                li Javascript / ES6
+                li CSS / HTML
               ul
-                li Swift
                 li Python
-                li C#
-                li C / C++
-                li Scheme
 
           .card-column.frameworks(style="width:24%")
-            p Frameworks
+            p Frameworks / Libraries
             ul
-              li AngularJS 1
-              li Cocoa Touch
-              li Bootsrap
               li ReactJS
+              li Graphql
+              li Mapbox
           .card-column.databases(style="width:24%")
             p Technologies
             ul
-              li SQL Databases
+              li SQL Databases (Postgres)
+              li PostGIS
               li Node.js
-              li Git
-              li AWS / Bluemix
-              li Gulp
-              li Travis
+              li NestJS
 
-      +card('Organizations', 'people')
-        +cardDetail('Association for Computing Machinery', 'Aug 2015 ~ Present', 
-                    'Student Member', '', '')
-        +cardDetail('Mobile Application Development Club', '2016 ~ Present', 'Student Memeber', 
-                    '', '')
-        +cardDetail('Miami University Rock Climbing Club', 'Aug 2015 ~ Present', 'Trip Planner/ Member', 
-                    '', '')
-          p Coordinating multiple 12-person climbing trips to the West Coast
+      //- +card('Organizations', 'people')
+      //-   +cardDetail('Association for Computing Machinery', 'Aug 2015 ~ 2019', 
+      //-               'Student Member', '', '')
+      //-   +cardDetail('Mobile Application Development Club', '2016 ~ 2019', 'Student Memeber', 
+      //-               '', '')
+      //-   +cardDetail('Miami University Rock Climbing Club', 'Aug 2015 ~ 2019', 'Trip Planner/ Member', 
+      //-               '', '')
+      //-     p Coordinating multiple 12-person climbing trips to the West Coast
   .footer
     p Developed with Material Design Lite, Scss and Jade.
